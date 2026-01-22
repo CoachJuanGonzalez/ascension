@@ -1,0 +1,322 @@
+Create a premium, high-converting, single-page landing page inspired by the structure and funnel flow of the Coach Blue opt-in page (https://www.coachblue.fit/opt-in
+) for a high-end coaching program called:
+
+Ascension Private Mentorship
+
+This is an exclusive transformation program led by an experienced fighter-style coach focused on discipline, identity, strength, and embodiment for men who want to become mentally and physically formidable.
+
+The page must feel:
+
+Dark, cinematic, elite
+
+Masculine but sophisticated
+
+Minimal yet emotionally powerful
+
+Premium (like a luxury brand, not a gym ad)
+
+Goal:
+Convert visitors into qualified applications for 1:1 mentorship.
+
+TARGET AUDIENCE
+
+Men (25–50) interested in:
+
+Self-mastery
+
+Discipline
+
+Performance
+
+Entrepreneurship
+
+Strength & embodiment
+
+Identity transformation
+
+TECH REQUIREMENTS (must follow strictly)
+
+Use HTML + Tailwind CSS via CDN
+
+Vanilla JS only (no frameworks)
+
+Responsive mobile-first layout
+
+Fast loading (no heavy libraries)
+
+Accessible (ARIA labels, alt text, contrast)
+
+SEO-ready:
+
+Meta title: Ascension Private Mentorship – Become Undeniable
+
+Meta description: Elite 1:1 coaching for men seeking discipline, strength, and embodied presence
+
+Proper H1/H2 structure
+
+Deliver files:
+
+index.html
+
+script.js
+
+(styles.css only if needed beyond Tailwind)
+
+No backend
+
+Clean, readable code
+
+VISUAL STYLE
+
+Backgrounds: dark gradients (#000 → #333), cinematic shadows, subtle grain feel
+
+Accents: muted gold (#D4AF37)
+
+Typography:
+
+Headlines: elegant serif (Playfair Display or similar via Google Fonts)
+
+Body: modern sans-serif (Inter, Montserrat, etc.)
+
+Animations:
+
+Fade-in on scroll using IntersectionObserver
+
+Subtle hover glow on buttons
+
+Light micro-interactions only
+
+No navigation bar
+
+Scroll-based funnel layout
+
+PAGE STRUCTURE (mirror Coach Blue’s flow)
+1. Hero Section (100vh)
+
+Background: dark cinematic gradient or fighter silhouette placeholder
+
+Centered content:
+
+Headline (H1):
+ASCENSION PRIVATE MENTORSHIP
+
+Subheadline:
+BECOME UNDENIABLE.
+
+Description:
+Discipline, strength, and embodied presence for men building a powerful and functional body — inside and out.
+
+Primary CTA (gold button):
+REQUEST PRIVATE ACCESS
+→ smooth scroll to application form
+
+Under CTA (small text):
+Application required · Limited monthly capacity
+
+2. Social Proof Section (early, like Coach Blue)
+
+Headline:
+Join Men Who Are Raising Their Standards
+
+Copy:
+Clients commonly report:
+
+Stronger routines within weeks
+
+Increased confidence and self-control
+
+Noticeable physical changes within 8–12 weeks
+
+CTA:
+APPLY FOR MENTORSHIP
+
+(Do not invent testimonials. Keep proof framed as experience-based outcomes.)
+
+3. Identity & Positioning Section
+
+Headline:
+This is not fitness. This is identity.
+
+Copy:
+Ascension is for men who refuse average standards.
+You don’t just train your body — you forge discipline, nervous system control, and self-command.
+
+Short bullets:
+
+Structure replaces chaos
+
+Standards replace excuses
+
+Presence replaces hesitation
+
+4. The Three Pillars (Features Grid)
+
+Three premium cards with subtle icons and hover animation.
+
+STRUCTURE
+Custom protocols built around your goals, schedule, and capacity. No generic plans.
+
+DISCIPLINE
+High-accountability coaching, weekly check-ins, and behavior correction systems.
+
+EMBODIMENT
+Train the nervous system: breathwork, presence under pressure, emotional regulation, mental conditioning.
+
+Tone must feel grounded, professional, not mystical.
+
+CTA:
+APPLY FOR MENTORSHIP
+
+5. Transformation Section (Proof-Oriented)
+
+Headline:
+Transform the body. Elevate the standard.
+
+Two side-by-side placeholders:
+
+Before: average physique
+
+After: strong athletic physique
+
+Caption:
+Not perfection. Progress earned through discipline.
+
+Supporting copy:
+Clients commonly report:
+
+Stronger habits within weeks
+
+Higher self-respect and consistency
+
+Visible body changes in 8–12 weeks
+
+CTA:
+APPLY FOR MENTORSHIP
+
+6. Authority & Method
+
+Headline:
+Built on real-world performance principles
+
+Bullets:
+
+Strength training focused on compound movement patterns
+
+Conditioning inspired by fighter preparation
+
+Recovery and nervous system regulation
+
+Psychological discipline frameworks
+
+Identity-based habit formation
+
+Position the coach as serious and experienced without unverifiable credentials.
+
+7. Consultation Section
+
+Headline:
+Schedule Your Strategy Session
+
+Copy:
+Discuss your goals with an experienced coach.
+Spots are limited — book intentionally.
+
+CTA:
+BOOK A CALL
+(Placeholder link or modal allowed)
+
+8. FAQ Section (Accordion)
+
+Headline:
+The Questions We Know You Have
+
+Questions & answers:
+
+Who is this for?
+Men seeking self-mastery through discipline and strength.
+
+Do I need to be fit already?
+No. The program adapts to your current level.
+
+What does the mentorship include?
+Custom plans, accountability, nervous system training, structured progression.
+
+How soon do people see changes?
+Stronger habits within 3–4 weeks; physical changes commonly appear within 8–12 weeks.
+
+How does the application work?
+Submit the form. Applications reviewed within 24–48 hours.
+
+Tone: honest, grounded, professional.
+
+9. Application Section (Final CTA)
+
+Headline:
+Apply for Ascension
+
+Copy:
+This is a private mentorship for men serious about change.
+If accepted, you’ll be contacted within 24–48 hours.
+
+Form fields:
+
+Name
+
+Email
+
+Current fitness level (Beginner / Intermediate / Advanced)
+
+Goals (textarea)
+
+Why do you want this mentorship? (textarea)
+
+Button:
+SUBMIT APPLICATION
+
+On submit:
+Show success message (front-end only)
+
+10. Footer
+
+Minimal:
+© Ascension Private Mentorship
+Privacy Policy placeholder
+Contact: info@example.com
+
+REQUIRED FUNCTIONAL FEATURES
+
+IntersectionObserver scroll animations
+
+Smooth anchor scrolling
+
+Button hover micro-interactions
+
+Accordion FAQ
+
+Client-side form validation
+
+Clean, readable, commented code
+
+Mobile-first responsive layout
+
+High perceived quality
+
+DESIGN & PSYCHOLOGY PRINCIPLES TO FOLLOW
+
+Must feel premium, not salesy
+
+Must build authority without exaggeration
+
+Must use identity-based psychology
+
+Must guide users through a clear funnel
+
+Must make application feel selective
+
+Must position this as mentorship, not generic coaching
+
+Verdict:
+
+Yes — this is absolutely within Replit’s capabilities.
+Yes — this will build efficiently without burning your credits.
+Yes — this will produce a real, usable, high-quality landing page.
