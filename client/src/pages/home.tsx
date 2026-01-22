@@ -29,6 +29,7 @@ import {
 } from "@/components/ui/select";
 import { Target, Shield, Brain, Check, Calendar, ChevronDown } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import heroImage from "@assets/JuanGreyMaster_1_1769102177296.jpeg";
 
 function useScrollAnimation() {
   useEffect(() => {
@@ -57,8 +58,16 @@ function HeroSection() {
       aria-label="Hero section"
       data-testid="section-hero"
     >
-      <div className="absolute inset-0 hero-gradient z-0" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background z-0" />
+      <img
+        src={heroImage}
+        alt="Ascension Mentorship"
+        className="absolute inset-0 w-full h-full object-cover object-top"
+        loading="eager"
+        decoding="sync"
+        data-testid="img-hero"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-background z-0" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/80 z-0" />
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <p className="text-gold tracking-[0.3em] uppercase text-sm font-medium mb-6 fade-in-up" data-testid="text-hero-tagline">
