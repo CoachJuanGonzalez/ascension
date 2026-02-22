@@ -396,11 +396,36 @@
             }
         }
 
-        /* Prevent text overflow */
-        h1, h2, h3, h4, h5, h6, p {
+        /* Prevent text overflow and word breaks */
+        h1, h2, h3, h4, h5, h6, p, span, div, a, li {
             word-wrap: break-word;
             overflow-wrap: break-word;
-            hyphens: auto;
+            hyphens: none; /* Disable hyphenation for cleaner look */
+        }
+
+        /* Prevent orphaned words - keep phrases together */
+        .font-display, .heading-lg, h1, h2, h3 {
+            text-wrap: balance; /* CSS text-wrap for better line breaks */
+            -webkit-text-wrap: balance;
+        }
+
+        /* Ensure no word cutting on small screens */
+        @media (max-width: 640px) {
+            h1, h2, h3, .font-display {
+                word-break: keep-all;
+                overflow-wrap: anywhere;
+            }
+        }
+
+        /* Prevent awkward breaks in important text */
+        .no-break {
+            white-space: nowrap;
+        }
+
+        /* Allow breaking only at safe points */
+        .safe-break {
+            word-break: normal;
+            overflow-wrap: break-word;
         }
 
         /* Form inputs - better mobile UX */
@@ -575,7 +600,7 @@
                         <a
                             href="#apply"
                             class="bg-gold"
-                            style="text-decoration: none;"
+                            style="text-decoration: none; white-space: nowrap;"
                         >
                             APPLY FOR MENTORSHIP
                         </a>
@@ -755,19 +780,20 @@
     <section class="py-20 md:py-32 px-6 grain-overlay">
         <div class="max-w-7xl mx-auto">
             <div class="section-divider-double mb-6"></div>
-            <h2 class="font-display text-2xl md:text-3xl text-center mb-6 fade-in-up text-gold">
-                WHAT CHANGES IN 90 DAYS
+            <h2 class="font-display text-2xl md:text-3xl text-center mb-6 fade-in-up text-gold" style="word-break: keep-all;">
+                WHAT CHANGES IN<br class="sm:hidden" /> 90 DAYS
             </h2>
             <div class="section-divider-double mb-16"></div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="framed-section p-6 fade-in-up hover-elevate">
                     <div class="aspect-square bg-black/40 mb-4 rounded overflow-hidden">
-                        <div class="w-full h-full flex items-center justify-center text-gold/20">
-                            <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                        </div>
+                        <img
+                            src="/attached_assets/physical-picture.jpeg"
+                            alt="Physical Training"
+                            class="w-full h-full object-cover object-center"
+                            style="filter: contrast(1.1) brightness(0.9) saturate(1.0);"
+                        />
                     </div>
                     <h3 class="font-display text-xs md:text-sm mb-2 text-gold">Physical consistency</h3>
                     <p class="text-bronze text-xs">You train and move with rhythm again.</p>
@@ -882,7 +908,7 @@
                     <p class="text-bronze text-base md:text-lg mb-6 italic">
                         Ready to move like this?
                     </p>
-                    <a href="#apply" class="bg-gold" style="text-decoration: none;">
+                    <a href="#apply" class="bg-gold" style="text-decoration: none; white-space: nowrap;">
                         APPLY FOR MENTORSHIP
                     </a>
                 </div>
@@ -1285,7 +1311,7 @@
                     <button
                         type="submit"
                         class="w-full bg-gold font-display"
-                        style="cursor: pointer; border-radius: 0.5rem;"
+                        style="cursor: pointer; border-radius: 0.5rem; white-space: nowrap;"
                     >
                         SUBMIT APPLICATION
                     </button>
